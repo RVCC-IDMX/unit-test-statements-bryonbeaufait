@@ -12,16 +12,19 @@
  * @returns {boolean} - true if num is odd, false otherwise
  */
 function isOdd(num) {
-  // write your code here & return
+  if (num % 2 === 0) {
+    return false;
+  }
+  return true;
 }
-
 /**
  * Check if a number is even
  * @param {number} num - number to check
  * @returns {boolean} - true if num is even, false otherwise
  */
 function isEven(num) {
-  // write your code here & return
+  if (num % 2 === 0) return true;
+  return false;
 }
 
 /**
@@ -30,7 +33,8 @@ function isEven(num) {
  * @returns {boolean} - true if value is a negative number, false otherwise
  */
 function isNegative(value) {
-  // write your code here & return
+  if (value < 0) return true;
+  return false;
 }
 
 module.exports = {
